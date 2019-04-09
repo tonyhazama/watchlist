@@ -1,0 +1,28 @@
+$sidebar-width: 280px;
+$header-height: 60px;
+
+.structure{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.structure .header{
+  width: 100%;
+  height: $header-height;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.structure .sidebar{
+  width: $sidebar-width;
+  background: #fafafa;
+  height: calc(100% - #{$header-height});
+}
+
+.structure .body{
+  padding: 20px;
+  flex: 1;
+  height: calc(100% - #{$header-height});
+}
